@@ -215,7 +215,7 @@ def capture_live_embeddings(duration=4, show_window=True):
 
     return embeddings  # list of 1D np arrays
 
-@app.route("/capture-face", methods=["POST"])
+@app.route("/", methods=["GET"])
 def home():
     return jsonify({"message": "Face Encode API is running."})
 
